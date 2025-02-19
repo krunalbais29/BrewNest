@@ -123,6 +123,7 @@ section{
 /* special coffee */
 .special-box{
    background-color: #5C7285;
+   background-size: 100% 100%;
    padding: 0px 200px;
 }
 
@@ -142,12 +143,27 @@ section{
 .special-2 > .container-fluid{
    text-align: right;
 }
+.special img{
+   position: relative;
+   transition-duration: 1s;
+}
+
+.special img :hover{
+   position: relative;
+   transform: scale(1.5,1.5);
+}
 
 
+
+.special .quote-icon {
+   font-size: 2rem;
+   color: white;
+}
 
 @media (max-width: 768px) {
 
    .special-box{
+      
       padding: 0px 0px;
    }
    .special {
