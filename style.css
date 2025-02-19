@@ -1,0 +1,274 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,body{
+   width: 100%;
+   /* height: 100%; */
+}
+
+body{
+   font-family: Rubik, sans-serif;
+   font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+   /* font-family: Spectral, serif; */
+   font-family: Playfair Display, serif !important;
+}
+
+a{
+   text-decoration: none;
+}
+
+section{
+   width: 100%;   
+}
+
+
+/* Bootstrap nav */
+
+
+.nav-link{
+   color: white;
+}
+.nav-left{
+   display: flex;
+   color: white;
+   justify-content: space-evenly;
+   width: 50%;
+}
+.nav-right{
+   display: flex;
+   justify-content: space-evenly;
+   width: 50%;
+}
+.logo{
+   width: 100px;
+   border-radius: 50%;
+}
+
+
+
+/* banner */
+
+.main{
+   height: 100vh;
+   width:100% !important;
+   background-color: black;
+   stroke-opacity: .8;
+   background-image: url("./asset/images/19.jpg");
+   background-size:cover;
+}
+
+.banner{
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   color: white;
+   opacity: .5;
+}
+
+.banner-top{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.banner-top-head{
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50px;
+}
+
+
+
+/* About page */
+
+.about-banner{
+   width: 100% !important;
+   background-image: none;
+   background-size:cover;
+   height: 80vh;
+}
+
+.media-decoration-1{
+   width: 80%;
+}
+.about-main{
+   width: 100%;
+}
+
+@media (max-width: 768px) {
+   .about-row-2 {
+      display: flex;
+      flex-direction:column-reverse;
+   }
+}
+
+
+
+
+
+
+/* special coffee */
+.special-box{
+   width: 100%;
+   float: left;
+   background-color: #5C7285;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   padding: 0px 200px;
+}
+
+.special-1 {
+   border-radius: 150px 10px 10px 150px;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+   display: flex;
+   align-items: center;
+}
+
+.special-2 {
+   border-radius: 10px 150px 150px 10px;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+   display: flex;
+   align-items: center;
+}
+.special-2 > .container-fluid{
+   text-align: right;
+}
+.special img{
+   position: relative;
+   transition-duration: 1s;
+}
+
+.special img :hover{
+   position: relative;
+   transform: scale(1.5,1.5);
+}
+
+
+
+.special .quote-icon {
+   font-size: 2rem;
+   color: white;
+}
+
+@media (max-width: 768px) {
+
+   .special-box{
+      
+      padding: 0px 0px;
+   }
+   .special {
+       flex-direction: column;
+       text-align: center;
+      border-radius: 20px;
+   }
+   .special-2  {
+      display: flex;
+      flex-direction: column-reverse;
+       text-align: center;
+      border-radius: 20px;
+   }
+   .special img {
+       margin: 0 0 1rem 0;
+       position: relative;
+       right: 0;
+   }
+   .special-2 > .container-fluid{
+      text-align: center;
+   }
+
+}
+
+
+
+
+
+
+
+/* reservation */
+
+
+.event-main{
+   border-radius: 15px;
+   background-color: rgba(240, 240, 240, 0.948);
+   width: 100%;
+}
+
+
+
+
+
+/* menu  */
+
+.discover{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   /* margin-bottom: 10px; */
+}
+
+@media (min-width:1024px) {
+
+   .m1,.m2{
+      padding: 32px;
+   }
+   
+}
+
+.menu1{
+   height: 450px;
+}
+
+
+
+.img-fluid {
+   position: relative;
+   transition-duration: 1s;
+   transition-timing-function: ease-in-out;
+}
+.img-fluid:hover {
+   transform: scale(1.1, 1.1);
+}
+.btn {
+   transition-duration: 1s;
+}
+
+
+
+
+/* contact */
+
+.contact-banner{
+   width: 100% !important;
+   background-image: none;
+   background-size:cover;
+   height: 80vh;
+}
+
+@media (min-width: 1024px) {
+
+   .vertical-line{
+      height: 400px;
+   }
+}
+
+
+
+
+/* Footer */
+footer{
+   width: 100%;
+   background-color: rgb(234, 234, 234);
+  }
+
+  
